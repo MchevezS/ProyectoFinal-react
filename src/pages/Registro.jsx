@@ -7,7 +7,7 @@ import '../style/FormRegistro.css'
 function Registro() {
   return (
     <div>
-      
+      <FormRegistro/>
     </div>
   )
 }
