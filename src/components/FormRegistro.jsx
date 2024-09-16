@@ -1,7 +1,6 @@
 import React, { useState} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../style/FormRegistro.css'
-import Link from 'react'
 import { getUsers, postUsers } from '../services/Llamados';
 
 function FormRegistro() {
@@ -89,7 +88,7 @@ try {
 
      <button type='button' className='btnRegistrarse' onClick={validarFormRegistro}>Registrarse</button>
 
-      {/* <Link to={'/Login'}>Ya tengo Cuenta</Link>  */}
+     <Link to={"/Login"}>Ya tengo Cuenta</Link> 
     </form>
     </div>
   )

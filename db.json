@@ -1,5 +1,52 @@
 {
-  "users":[
-
-]
+  "users": [
+    {
+      "id": "4b41",
+      "tipoUsuario": "admin",
+      "codigo": "A159",
+      "name": "juan saenzhj",
+      "correo": "dioedkojoeq114",
+      "numero": "64462949"
+    },
+    {
+      "id": "3869",
+      "tipoUsuario": "",
+      "codigo": "18",
+      "name": "Michelle chevez",
+      "correo": "dioedkojoe",
+      "numero": "5547444544"
+    },
+    {
+      "id": "e2d2",
+      "tipoUsuario": "",
+      "codigo": "18",
+      "name": "Michelle chevez",
+      "correo": "msnkx",
+      "numero": "5547444544"
+    },
+    {
+      "id": "1347",
+      "tipoUsuario": "",
+      "codigo": "D01",
+      "name": "Michelle chevez saborio",
+      "correo": "saboriomichelle93@gmail.com",
+      "numero": "64462949"
+    },
+    {
+      "id": "f651",
+      "tipoUsuario": "",
+      "codigo": "D01",
+      "name": "Michelle chevez saborio",
+      "correo": "saboriomichelle931@gmail.com",
+      "numero": "64462949"
+    },
+    {
+      "id": "f332",
+      "tipoUsuario": "",
+      "codigo": "156",
+      "name": "Michelle Monserrat chevez saborio",
+      "correo": "saboriomichelle9319@gmail.com",
+      "numero": "54825452"
+    }
+  ]
 }
