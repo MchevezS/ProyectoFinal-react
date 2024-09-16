@@ -28,15 +28,10 @@ function FormLogin() {
 try {
   let usuarios = await getUsers();
 
-   let usuario = usuarios.find(user => user.inputCorreo === correo);
+   let usuario = usuarios.find(user => user.correo === correo && user.clave === password);
 
 if (usuario) {
-    if (usuario.inputPassword === password ) {
-      alert('Login exitoso ')
-       navigate ('/Principal');
-    }else{
-      alert('Correo y Password incorrectos')
-    }
+    navigate("/Principal")
 } else{
   alert('No se ha encontrado un usuario con ese Correo electronico.')
 }

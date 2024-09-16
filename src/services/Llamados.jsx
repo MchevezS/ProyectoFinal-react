@@ -22,19 +22,11 @@ export{postUsers}
 //Metodo Get: Obtiene informacio
 async function getUsers(userData, usuarioExiste) {
     try {
-        const response = await fetch('http://localhost:3001/users', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userData, usuarioExiste)
-        });
-
+        const response = await fetch('http://localhost:3001/users')
         if (!response.ok) {
             throw new Error('Error fetching users');
         }
-
-        const data = await response.json();
+        const data = await response.json()
         return data;
     } catch (error) {
         console.error('Error fetching users:', error);

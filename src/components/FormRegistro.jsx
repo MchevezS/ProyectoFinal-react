@@ -20,7 +20,7 @@ if (inputNombre.trim()==="" || inputCorreo.trim()==="" || inputPassword.trim()==
   return;
 }
 
-if (tipoUsuario === "cliente" && inputCodigo !== "C01") {
+if (tipoUsuario === "cliente" && inputCodigo !== "C01" ) {
   alert("Código del cliente incorrecto")
 
 }else if (tipoUsuario === "admin" && inputCodigo !== "A159"){
@@ -33,7 +33,8 @@ const userData = {
   codigo: inputCodigo,
   name: inputNombre, 
   correo: inputCorreo,
-  numero: inputNumero
+  numero: inputNumero,
+  clave: inputPassword
 };
 
 try {
