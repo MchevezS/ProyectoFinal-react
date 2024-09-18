@@ -38,25 +38,29 @@ function BasicExample() {
     <Navbar expand="lg" className="bg-body-tertiary">
     <img className='logo' src='src/img/IMG_20231218_211651_662 - Dhara Macrame.jpg'></img>
       <Container>
-        <Navbar.Brand href="#home">Home</Navbar.Brand>
+      <NavDropdown title="Inicio" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Bolsa de valor</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Productos Destacados </NavDropdown.Item>
+            </NavDropdown>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Productos</Nav.Link>
-            <Nav.Link href="#link">Sobre Nosotros</Nav.Link>
-            <NavDropdown title="Seleccione una opcion" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Registrarse</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-              Inicio Sesion
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Cerrar Sesion</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+          <Nav className="me-auto1">
+            <NavDropdown title="Sobre Nosotros" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Informacion sobre la filosofia de Dhara y la nudoterapia</NavDropdown.Item>
             </NavDropdown>
           </Nav>
+            <Nav className="me-auto2">
+            <NavDropdown title="Productos/Servicios" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">aca voy agregar todos los productos que haya </NavDropdown.Item>
+            </NavDropdown>  
+          </Nav>
+          <Nav className="me-auto3">
+            <NavDropdown title="Metodo de Pago" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Sinpe Movil</NavDropdown.Item>
+            </NavDropdown>  
+          </Nav>
         </Navbar.Collapse>
+          <i className="fa-solid fa-bars"></i>
       </Container>
     </Navbar>
     </div>
