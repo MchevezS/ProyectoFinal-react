@@ -1,0 +1,9 @@
+.contenedorImagenP{
+    display: flex;
+    margin-top: 50px;
+}
+
+.imagenP{
+    width: 1750px;
+    height: 700px;
+}
