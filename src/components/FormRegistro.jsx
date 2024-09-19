@@ -86,7 +86,7 @@ try {
      <input type='password' className='inputPassword' id='inputPassword' placeholder='Ingrese su password' value={inputPassword} onChange={(e)=>{setInputPassword(e.target.value)}} required/>
 
      <label className='numero'>Numero de telefono</label>
-     <input type='number' className='inputNumero' id='inputNumero' placeholder='Ingrese su Número de telefono' value={inputNumero} onChange={(e)=>{setInputNumero(e.target.value)}} required/>
+     <input type='tel' className='inputNumero' id='inputNumero' placeholder='Ingrese su Número de telefono' value={inputNumero} onChange={(e)=>{setInputNumero(e.target.value)}} required/>
 
      <button type='button' className='btnRegistrarse' onClick={validarFormRegistro}>Registrarse</button>
 
