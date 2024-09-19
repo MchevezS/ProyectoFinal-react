@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { getUsers } from '../services/Llamados';
 import FormRegistro from './FormRegistro';
 import { Link, useNavigate } from 'react-router-dom';
+import { mostrarAlerta } from './MostraAlerta';
 
 
 function FormLogin() {
@@ -14,14 +15,16 @@ function FormLogin() {
  async function validarLogin() {
 
  if (codigo.trim()==="" || correo.trim()==="" || password.trim()==="") {
-   alert('Llenar campos vacios') 
+   mostrarAlerta("error",'Llenar campos vacios')
+ 
  }
 
  if (tipoUsuarioL === "cliente" && codigo !== "C01") {
-  alert("Código del cliente incorrecto")
+  mostrarAlerta("error", "Código del cliente incorrecto")
+  
 
 }else if (tipoUsuarioL === "admin" && codigo !== "A159"){
-  alert('Código de Administrador incorrecto')
+  mostrarAlerta("error", "codigo de administrardor incorrecto")
   return;
 }
 
@@ -31,15 +34,18 @@ try {
    let usuario = usuarios.find(user => user.correo === correo && user.clave === password);
 
 if (usuario) {
+  mostrarAlerta("success", "Te has logueado de manera exitosa")
     navigate("/Principal")
 } else{
-  alert('No se ha encontrado un usuario con ese Correo electronico.')
+  mostrarAlerta("error", 'No se ha encontrado un usuario con ese Correo electronico.')
+  
 }
 
 
 
 } catch (error) {
-  alert('Ocurrio un error al procesar tu solitud. Intentalo de nuevo mas tarde.')
+  mostrarAlerta("error", 'Ocurrio un error al procesar tu solitud. Intentalo de nuevo mas tarde.')
+ 
 }
     
  }

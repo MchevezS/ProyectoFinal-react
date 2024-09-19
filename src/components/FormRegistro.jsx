@@ -2,6 +2,7 @@ import React, { useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import '../style/FormRegistro.css'
 import { getUsers, postUsers } from '../services/Llamados';
+import { mostrarAlerta } from './MostraAlerta';
 
 function FormRegistro() {
   const [tipoUsuario, setTipoUsuario] = useState('');
@@ -16,15 +17,15 @@ async function validarFormRegistro() {
 
 
 if (inputNombre.trim()==="" || inputCorreo.trim()==="" || inputPassword.trim()==="" || inputNumero.trim()==="") {
-  alert('llenar campos vacios')
+  mostrarAlerta("error", "Llenar campos vacios")
   return;
 }
 
 if (tipoUsuario === "cliente" && inputCodigo !== "C01" ) {
-  alert("Código del cliente incorrecto")
+  mostrarAlerta("error", "Código del cliente incorrecto")
 
 }else if (tipoUsuario === "admin" && inputCodigo !== "A159"){
-  alert('Código de Administrador incorrecto')
+  mostrarAlerta("error", 'Código de Administrador incorrecto')
   return;
 }
 
@@ -44,13 +45,13 @@ try {
 
   if (usuarioExiste) {
     if (usuarioExiste.name === inputNombre) {
-      alert('Ya existe un usuario con el mismo nombre y correo')
+      mostrarAlerta("error", 'Ya existe un usuario con el mismo nombre y correo')
     } else {
-    alert('Correo en uso. Por favor, usar otro')
+      mostrarAlerta("error", 'Correo en uso. Por favor, usar otro')
   }
 }else{
   await postUsers (userData);
-  alert('Registrado exitosamente')
+  mostrarAlerta("success", 'Registrado exitosamente')
   navigate('/Login');
 }
 } catch (error) {

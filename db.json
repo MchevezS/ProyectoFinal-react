@@ -34,6 +34,24 @@
       "correo": "dasd@da15sd",
       "numero": "54825452",
       "clave": "4848"
+    },
+    {
+      "id": "d8da",
+      "tipoUsuario": "",
+      "codigo": "1532",
+      "name": "monserrat chevez",
+      "correo": "michelleMonserrat",
+      "numero": "64462949",
+      "clave": "1515"
+    },
+    {
+      "id": "3560",
+      "tipoUsuario": "admin",
+      "codigo": "A159",
+      "name": "monserrat chevez saborio",
+      "correo": "michelleMonserrat@gmail",
+      "numero": "64462949",
+      "clave": "456"
     }
   ]
 }
