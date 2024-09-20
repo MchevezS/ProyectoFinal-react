@@ -1,50 +1,6 @@
 {
   "users": [
     {
-      "id": "4b41",
-      "tipoUsuario": "admin",
-      "codigo": "A159",
-      "name": "juan saenzhj",
-      "correo": "dioedkojoeq114",
-      "numero": "64462949"
-    },
-    {
-      "id": "68e0",
-      "tipoUsuario": "",
-      "codigo": "A01",
-      "name": "mich",
-      "correo": "mich@gmail.com",
-      "numero": "64462948",
-      "clave": "1010"
-    },
-    {
-      "id": "bff3",
-      "tipoUsuario": "",
-      "codigo": "156",
-      "name": "michelle",
-      "correo": "dasd@dasd",
-      "numero": "54825452",
-      "clave": "123"
-    },
-    {
-      "id": "460d",
-      "tipoUsuario": "",
-      "codigo": "156",
-      "name": "michelle",
-      "correo": "dasd@da15sd",
-      "numero": "54825452",
-      "clave": "4848"
-    },
-    {
-      "id": "d8da",
-      "tipoUsuario": "",
-      "codigo": "1532",
-      "name": "monserrat chevez",
-      "correo": "michelleMonserrat",
-      "numero": "64462949",
-      "clave": "1515"
-    },
-    {
       "id": "3560",
       "tipoUsuario": "admin",
       "codigo": "A159",
@@ -52,6 +8,15 @@
       "correo": "michelleMonserrat@gmail",
       "numero": "64462949",
       "clave": "456"
+    }
+  ],
+  "products": [
+    {
+      "id": "abd6",
+      "nombreProducto": "Papa",
+      "imagenProducto": "C:\\fakepath\\Lo que dejó junio_20240903_173230_0001 - Dhara Macrame.png",
+      "descripcion": "Papa Blanca",
+      "precio": "2000"
     }
   ]
 }

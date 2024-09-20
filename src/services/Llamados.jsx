@@ -1,12 +1,12 @@
 // Metodo post: Guarda los datos.
-async function postUsers(userData, usuarioNuevo) {
+async function postUsers(userData, usuarioNuevo, userProducts, endpoint) {
     try {
-        const response = await fetch("http://localhost:3001/users", {
+        const response = await fetch(`http://localhost:3001/${endpoint}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(userData, usuarioNuevo)
+            body: JSON.stringify(userData, usuarioNuevo, userProducts)
         });
         const data = await response.json()
         // console.log(data);
@@ -19,10 +19,31 @@ async function postUsers(userData, usuarioNuevo) {
 export{postUsers}
 
 
-//Metodo Get: Obtiene informacio
-async function getUsers(userData, usuarioExiste) {
+// Metodo post: Guarda los datos.
+async function postProducts(obj, endpoint) {
     try {
-        const response = await fetch('http://localhost:3001/users')
+        const response = await fetch(`http://localhost:3001/${endpoint}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(obj)
+        });
+        const data = await response.json()
+        // console.log(data);
+        return data
+    } catch (error) {
+        console.error('Error posting user:', error);
+        throw error;
+    }
+}
+export{postProducts}
+
+
+//Metodo Get: Obtiene informacio
+async function getUsers(endpoint) {
+    try {
+        const response = await fetch(`http://localhost:3001/${endpoint}`)
         if (!response.ok) {
             throw new Error('Error fetching users');
         }
@@ -36,16 +57,9 @@ async function getUsers(userData, usuarioExiste) {
 export { getUsers};
 
 // Metodo Put: Actualiza datos
-async function updateUsers(nombre, email, clave) {
+async function updateUsers(endpoint) {
     try {
-
-        const userData = { 
-            nombre, 
-            email,
-            clave
-
-        };
-        const response = await fetch("http://localhost:3001/users/"+id, {
+        const response = await fetch(`http://localhost:3001/${endpoint}`+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -65,9 +79,9 @@ export{updateUsers}
 
 
 // Metodo Delete: Elimina datos.
-async function EliminarUsuario(id) {
+async function EliminarUsuario(endpoint, id) {
     try {
-        const response = await fetch(`http://localhost:3001/users/${id}`, {
+        const response = await fetch(`http://localhost:3001/${endpoint}/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

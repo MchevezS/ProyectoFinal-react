@@ -1,7 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { getUsers, postProducts, postUsers } from '../services/Llamados';
+import { mostrarAlerta } from './MostraAlerta';
+import { useNavigate } from 'react-router-dom';
 
 function FormularioProductos() {
+    const [producto, setProducto]= useState('');
+    const [imagenProducto, setImagenProducto]= useState('');
+    const [descripcion, setDescripcion]= useState('');
+    const [precio, setPrecio]= useState('');
+    const navigate = useNavigate()
 
+  const validarProductos = async()=>{
+    if (producto.trim()==="" || imagenProducto.trim()==="" || descripcion.trim()==="" || precio.trim()==="") {
+      mostrarAlerta("error", "Llenar compas vacios")
+      return;
+    }
+
+    const  userProducts = {
+      nombreProducto:producto,
+      imagenProducto:imagenProducto,
+      descripcion:descripcion,
+      precio:precio
+    };
+
+    try {
+      let productos = await getUsers("products");
+
+      let productoExiste = productos.find(producto => producto.nombreProducto === producto && producto.precio === precio);
+
+    if (productoExiste) {
+      mostrarAlerta("error", 'Ya existe un producto con el mismo nombre y precio')
+    }
+    else{
+      await postProducts(userProducts, "products");
+       mostrarAlerta('success', "Tus productos sean guardado existosamente")
+        navigate('/principal')
+    }
+   } catch (error) {
+       console.error('Error al procesar la Solicitud:', error)
+   }    
+
+  }
 
   return (
     <div>
@@ -16,9 +55,10 @@ function FormularioProductos() {
         <label>Agregar Descripcion</label>
         <input type='text' className='descripcion' value={descripcion} placeholder='Ingresa una descripcion ' onChange={(e)=>setDescripcion(e.target.value)}/>
 
-        <label>Precio</label>
-        <input type=''/>
+        <label>Agrega un Precio</label>
+        <input type='precio' className='precio' value={precio} placeholder='Ingresa el precio del producto' onChange={(e)=>setPrecio(e.target.value)}/>
 
+        <button type='button' className=' btnAgregar btn-success' onClick={validarProductos}>Agregar Productos</button>
     </form>
       
     </div>

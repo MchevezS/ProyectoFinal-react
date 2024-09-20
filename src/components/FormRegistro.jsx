@@ -50,7 +50,7 @@ try {
       mostrarAlerta("error", 'Correo en uso. Por favor, usar otro')
   }
 }else{
-  await postUsers (userData);
+  await postUsers (userData, "users");
   mostrarAlerta("success", 'Registrado exitosamente')
   navigate('/Login');
 }
