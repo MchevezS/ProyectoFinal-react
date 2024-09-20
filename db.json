@@ -17,6 +17,335 @@
       "imagenProducto": "C:\\fakepath\\Lo que dejó junio_20240903_173230_0001 - Dhara Macrame.png",
       "descripcion": "Papa Blanca",
       "precio": "2000"
+    },
+    {
+      "id": "91ab",
+      "nombreProducto": "aretes",
+      "imagenProducto": "C:\\fakepath\\Lo que dejó junio_20240903_173230_0001 - Dhara Macrame.png",
+      "descripcion": "tamano normal",
+      "precio": "5600"
+    },
+    {
+      "id": "0584",
+      "nombreProducto": "hbeouwshdkl;ewjk",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "ejwsdpoeodpow",
+      "precio": "8798678"
+    },
+    {
+      "id": "b72f",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "a4ae",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "d14b",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "b8a0",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "1849",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "fcb1",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "63e3",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "1f6d",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "9781",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "7048",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "a843",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "0807",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "46ba",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "d142",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "295d",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "362e",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "0ecb",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "729b",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "db8f",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "1dc5",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "000a",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "336f",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "a6e0",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "b9e2",
+      "nombreProducto": "sdfvgbhjkl",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "asdfghjkl",
+      "precio": "45446"
+    },
+    {
+      "id": "bbea",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "e64a",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "011e",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "a4af",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "6c39",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "0f69",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "bf38",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "5851",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "e28a",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "465b",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "2fa1",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "21eb",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "e4bc",
+      "nombreProducto": "michelle",
+      "imagenProducto": "C:\\fakepath\\Logos de dhara artesanal_20240705_095849_0000 - Dhara Macrame.png",
+      "descripcion": "minimo 15 x 50 cm",
+      "precio": "5600"
+    },
+    {
+      "id": "ae28",
+      "nombreProducto": "wertyuikol",
+      "imagenProducto": "C:\\fakepath\\IMG_20240809_121614 - Dhara Macrame.jpg",
+      "descripcion": "qwertyui",
+      "precio": "qdfghjk"
+    },
+    {
+      "id": "7ed9",
+      "nombreProducto": "collar",
+      "imagenProducto": "C:\\fakepath\\IMG_20240809_121614 - Dhara Macrame.jpg",
+      "descripcion": "echo a mano y con bronce",
+      "precio": "8000"
+    },
+    {
+      "id": "dc32",
+      "nombreProducto": "nudo",
+      "imagenProducto": "C:\\fakepath\\Lo que dejó junio_20240903_173230_0002 - Dhara Macrame.png",
+      "descripcion": "nudo echo a mano",
+      "precio": "15000"
+    },
+    {
+      "id": "1a9e",
+      "nombreProducto": "alallaalalallal",
+      "imagenProducto": "C:\\fakepath\\IMG_20240601_080123 - Dhara Macrame.jpg",
+      "descripcion": "asdewg",
+      "precio": "52205"
+    },
+    {
+      "id": "6428",
+      "nombreProducto": "ASDFGHJK",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "VFBGNM,.",
+      "precio": "6852"
+    },
+    {
+      "id": "b701",
+      "nombreProducto": "CFVGHJKL;",
+      "imagenProducto": "C:\\fakepath\\Lo que dejó junio_20240903_173230_0001 - Dhara Macrame.png",
+      "descripcion": "SDFJKL;",
+      "precio": "ERTGYHIK"
+    },
+    {
+      "id": "c949",
+      "nombreProducto": "MICHELLE",
+      "imagenProducto": "C:\\fakepath\\IMG_20240814_131801 - Dhara Macrame.jpg",
+      "descripcion": "LLALALALALALLA",
+      "precio": "8945"
+    },
+    {
+      "id": "ef77",
+      "nombreProducto": "SDCFVH",
+      "imagenProducto": "C:\\fakepath\\Lo que dejó junio_20240903_173230_0001 - Dhara Macrame.png",
+      "descripcion": "VBHM",
+      "precio": "FGHJKL"
     }
   ]
 }

@@ -3,7 +3,7 @@ import { getUsers, postProducts, postUsers } from '../services/Llamados';
 import { mostrarAlerta } from './MostraAlerta';
 import { useNavigate } from 'react-router-dom';
 
-function FormularioProductos() {
+function FormularioProductos({ agregarProducto }) {
     const [producto, setProducto]= useState('');
     const [imagenProducto, setImagenProducto]= useState('');
     const [descripcion, setDescripcion]= useState('');
@@ -33,8 +33,9 @@ function FormularioProductos() {
     }
     else{
       await postProducts(userProducts, "products");
+      agregarProducto(userProducts)
        mostrarAlerta('success', "Tus productos sean guardado existosamente")
-        navigate('/principal')
+        navigate('/productosAgregadosForm')
     }
    } catch (error) {
        console.error('Error al procesar la Solicitud:', error)

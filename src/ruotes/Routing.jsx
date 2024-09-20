@@ -5,7 +5,7 @@ import Registro from '../pages/Registro';
 import Login from '../pages/Login';
 import Principal from '../pages/Principal';
 import FormularioProductos from '../components/FormularioProductos';
-
+import productosAgregadosForm from '../components/ProductosAgregadosForm';
 
 const Routing = () => {
   return (
@@ -16,6 +16,7 @@ const Routing = () => {
        <Route path='/Login' element={<Login/>}/>
        <Route path='/principal' element={<Principal/>}/>  
        <Route path='/' element={<FormularioProductos/>} />
+       <Route path='/productosAgregadosForm' element={<productosAgregadosForm />}/>
      </Routes>
     </Router>
    );

@@ -5,7 +5,7 @@ import '../style/CarouselsPrincipal.css'
 function CarouselsPrincipal() {
   return (
   <>
-   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+   <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
       <img src="src/img/33.jpg" className="d-block w-100" alt="..."  style={{ height: '350px' }}/>
