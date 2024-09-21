@@ -1,3 +1,4 @@
+
 // Metodo post: Guarda los datos.
 async function postUsers(userData, usuarioNuevo, userProducts, endpoint) {
     try {
@@ -43,7 +44,12 @@ export{postProducts}
 //Metodo Get: Obtiene informacio
 async function getUsers(endpoint) {
     try {
-        const response = await fetch(`http://localhost:3001/${endpoint}`)
+        const response = await fetch(`http://localhost:3001/${endpoint}`, {
+            method: 'GET',
+            headers: {
+                'content-Type':'application/json'
+            },
+        });
         if (!response.ok) {
             throw new Error('Error fetching users');
         }

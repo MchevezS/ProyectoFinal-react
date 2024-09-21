@@ -1,6 +1,7 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './pages/Login'
+import ProductosAgregadosForm from './components/ProductosAgregadosForm';
 
 
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <Login/>  
+        <ProductosAgregadosForm/> 
       </div>
     </>
   )

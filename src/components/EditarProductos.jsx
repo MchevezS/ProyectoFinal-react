@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { mostrarAlerta } from './MostraAlerta';
 import { Await } from 'react-router-dom';
 
-function EditarFormularioP({id, }) {
+function EditarProductos({id, }) {
  const [nuevoNombre, setNuevoNombre] = useState('');
  const [nuevaImagen, setNuevaImagen] = useState(''); 
  const [nuevaDescripcion, setNuevaDescripcion] = useState(''); 
@@ -47,4 +47,4 @@ const validarEditarForm = async ()=>{
   )
 }
 
-export default EditarFormularioP
+export default EditarProductos

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FormularioProductos from './FormularioProductos';
 
 
-function productosAgregadosForm() {
+function ProductosAgregadosForm() {
     const [productos, setProductos] = useState([]);
 
     const agregarProducto = (nuevoProducto) => {
@@ -22,4 +22,4 @@ function productosAgregadosForm() {
     );
 }
 
-export default productosAgregadosForm;
+export default ProductosAgregadosForm;
