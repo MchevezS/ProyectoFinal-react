@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import { mostrarAlerta } from './MostraAlerta';
-import { Await } from 'react-router-dom';
+import { updateUsers } from '../services/Llamados';
 
 function EditarProductos({id, }) {
  const [nuevoNombre, setNuevoNombre] = useState('');
- const [nuevaImagen, setNuevaImagen] = useState(''); 
+ const [nuevaImagen, setNuevaImagen] = useState(null); 
  const [nuevaDescripcion, setNuevaDescripcion] = useState(''); 
  const [nuevoPrecio, setNuevoPrecio] = useState(''); 
 
 const validarEditarForm = async ()=>{
- if (nuevoNombre.trim()==="" || nuevaImagen.trim()==="" || nuevaDescripcion.trim()==="" || nuevoPrecio.trim()==="") {
+ if (nuevoNombre.trim()==="" || !nuevaImagen || nuevaDescripcion.trim()==="" || nuevoPrecio.trim()==="") {
     mostrarAlerta('error', "Llenar espacios vacios")
- }
+   return;
+   }
 
  const datosProductos = {
     nuevoNombre:nuevoNombre,
@@ -20,9 +21,15 @@ const validarEditarForm = async ()=>{
     nuevoPrecio:nuevoPrecio
  }
 
- await actualizarPoductos("products", id, datosProductos)
-
-}
+ try {
+   await updateUsers("products", id, datosProductos);
+   mostrarAlerta('success', "Producto actualizado correctamente");
+ } catch (error) {
+   console.error("Error actualizando el producto", error);
+   mostrarAlerta('error', "Error al actualizar el producto")
+ }
+ 
+};
 
   return (
     <div>
@@ -32,7 +39,7 @@ const validarEditarForm = async ()=>{
         <input type='name' className='nuevoNombre' value={nuevoNombre} placeholder='Ingresa el nuevo nombre de tu Producto' onChange={(e)=> setNuevoNombre(e.target.value)}></input>
 
         <label>Nueva Imagen</label>
-        <input type='file' className='nuevaImagen' value={nuevaImagen} placeholder='Ingresa tu nueva immagen' onChange={(e)=> setNuevaImagen(e.target.value)}></input>
+        <input type='file' className='nuevaImagen' placeholder='Ingresa tu nueva immagen' onChange={(e)=> setNuevaImagen(e.target.files[0])}></input>
 
         <label>Nueva descripcion</label>
         <input type='text' className='nuevaDescripcion' value={nuevaDescripcion} placeholder='Ingresa una descripcion' onChange={(e)=> setNuevaDescripcion(e.target.value)}></input>
