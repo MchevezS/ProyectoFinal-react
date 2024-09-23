@@ -1,0 +1,63 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Centra el formulario en la página */
+    background-color: #f8f8f8; /* Fondo claro */
+}
+
+.login-form {
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho fijo del formulario */
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50; /* Cambia el borde al enfocarse */
+    outline: none;
+}
+
+.btnLogin {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btnLogin:hover {
+    background-color: #45a049; /* Más oscuro */
+}
+
+.link-registro {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #4CAF50; /* Verde */
+}
+
+.link-registro:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}

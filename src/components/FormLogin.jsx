@@ -3,7 +3,7 @@ import { getUsers } from '../services/Llamados';
 import FormRegistro from './FormRegistro';
 import { Link, useNavigate } from 'react-router-dom';
 import { mostrarAlerta } from './MostraAlerta';
-
+import '../style/FormLogin.css'
 
 function FormLogin() {
    const [tipoUsuarioL, setTipoUsuarioL] = useState('');    

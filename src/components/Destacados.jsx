@@ -15,6 +15,7 @@ function Destacados() {
       { id: 1, nombre: 'Colgantes para plantas', precio: 6000, imagen: 'src/img/colgante de plantas.png' },
       { id: 2, nombre: 'Aretes', precio: 3000, imagen: 'src/img/aretes 2.png' },
       { id: 3, nombre: 'Tapiz grande 150cm x90cm', precio: 80000, imagen: 'src/img/tapiz.png' },
+      { id: 4, nombre: 'Pulseras', precio: 3500, imagen: 'src/img/33.jpg'},
   ];
     return (
       <div className="destacados">
