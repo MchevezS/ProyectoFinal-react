@@ -13,10 +13,13 @@ function BasicExample() {
 <br/>
 
 <div className='navbar'>
+    
     <Navbar expand="lg" className="bg-body-tertiary">
+    <div>
     <img className='logo' src='src/img/IMG_20231218_211651_662 - Dhara Macrame.jpg'></img>
-    <Link to={"carritodecompras"}> <i class="bi bi-cart4"></i></Link>
-      <Container>
+    <Link to={"/SobreNosotros"}> <i className="bi bi-cart4"></i></Link>
+    </div>
+      <Container className='contenedorurl'>
       <NavDropdown title="Inicio" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Bolsa de valor</NavDropdown.Item>
               <NavDropdown.Item href="/ProductosDestacados">Productos Destacados </NavDropdown.Item>

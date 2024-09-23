@@ -1,15 +1,5 @@
 /* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9; /* Color de fondo */
-    color: #333333; /* Color del texto principal */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+
   
   .form-container {
     background-color: #ffffff; /* Color de fondo del formulario */

@@ -5,25 +5,5 @@
 
  }
 
- .redesSociales{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.contenedorRedes{
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.redes{
-    margin-left: 30px;
-}
-.correoTelefono{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 450px;
-    margin-right: 25px;
-}
 

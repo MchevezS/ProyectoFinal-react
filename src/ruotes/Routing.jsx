@@ -6,6 +6,8 @@ import Login from '../pages/Login';
 import Principal from '../pages/Principal';
 import FormularioProductos from '../components/FormularioProductos';
 import ProductosAgregadosForm from '../components/ProductosAgregadosForm';
+import SobreNosotros from '../components/SobreNosotros';
+import Contactanos from '../components/Contactanos';
 
 
 const Routing = () => {
@@ -18,6 +20,8 @@ const Routing = () => {
        <Route path='/' element={<Principal/>}/>  
        <Route path='/FormularioProductos' element={<FormularioProductos />}/>
        <Route path='/productosAgregadosForm' element={<ProductosAgregadosForm />}/>
+       <Route path='/SobreNosotros' element={<SobreNosotros/>}/>
+       <Route path='/Contactanos' element={<Contactanos/>}/>
      </Routes>
     </Router>
    );
