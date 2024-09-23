@@ -9,20 +9,20 @@ function Contactanos() {
     <div className='contenedorRedes'>
     <div className='redesSociales'>
       <div className='face'>
-      <Link to={"Facebook"}> <i className="fa-brands fa-facebook redes"></i> </Link>
+      <Link to={"https://www.facebook.com/profile.php?id=100063838320536"}> <i className="fa-brands fa-facebook redes"></i> </Link>
       </div>
       <div className='whatsapp'>
-        <Link to={"Whatsapp"}> <i className="fa-brands fa-whatsapp redes"></i> </Link>
+        <Link to={"https://web.whatsapp.com/"}> <i className="fa-brands fa-whatsapp redes"></i> </Link>
         </div>
         <div className='insta'>
-          <Link to={"Insta"}> <i className="fa-brands fa-instagram redes"></i> </Link> 
+          <Link to={"https://www.instagram.com/dhara.artesanal?igsh=MTR3YXM0bm9pMzJpdQ=="}> <i className="fa-brands fa-instagram redes"></i> </Link> 
           </div>
           <div className='ubicacion'>
-           <Link to={"Ubicacion"}> <i className="fa-solid fa-location-dot redes"></i> </Link>
+           <Link to={"https://www.google.com/maps/dir/9.9319808,-84.1842688/-18.54057,-53.13267/@-3.9939455,-90.588436,4z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"}> <i className="fa-solid fa-location-dot redes"></i> </Link>
            </div>
     </div>
     <div className='correoTelefono'>
-       <Link to={"Correo"}> <i className="fa-solid fa-envelope"> dhara.macrame@gmail.com</i> </Link>
+       <Link to={"dhara.macrame@gmail.com."}> <i className="fa-solid fa-envelope"> dhara.macrame@gmail.com</i> </Link>
          <div className='telefono'>
          <Link to={"Telefono"}> <i className="fa-solid fa-phone"> +506 83151653</i> </Link>
          </div>     
