@@ -44,7 +44,7 @@ function BasicExample() {
           </Nav>
           <Nav className="me-auto3">
             <NavDropdown title="Metodo de Pago" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Sinpe Movil </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Sinpe Movil</NavDropdown.Item>
             </NavDropdown>  
           </Nav>
         </Navbar.Collapse>
