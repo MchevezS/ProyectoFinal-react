@@ -24,7 +24,7 @@ function Contactanos() {
     <div className='correoTelefono'>
        <Link to={"dhara.macrame@gmail.com."}> <i className="fa-solid fa-envelope"> dhara.macrame@gmail.com</i> </Link>
          <div className='telefono'>
-         <Link to={"Telefono"}> <i className="fa-solid fa-phone"> +506 83151653</i> </Link>
+         <Link to={"83151653"}> <i className="fa-solid fa-phone"> +506 83151653</i> </Link>
          </div>     
      </div>  
 </div>
