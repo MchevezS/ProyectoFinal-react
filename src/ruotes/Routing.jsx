@@ -7,6 +7,7 @@ import Principal from '../pages/Principal';
 import FormularioProductos from '../components/FormularioProductos';
 import ProductosAgregadosForm from '../components/ProductosAgregadosForm';
 
+
 const Routing = () => {
   return (
     <Router>
@@ -15,7 +16,7 @@ const Routing = () => {
        <Route path='/registro' element={<Registro/>}/>
        <Route path='/Login' element={<Login/>}/>
        <Route path='/principal' element={<Principal/>}/>  
-       <Route path='/' element={<FormularioProductos/>} />
+       <Route path='/' element={<FormularioProductos />}/>
        <Route path='/productosAgregadosForm' element={<ProductosAgregadosForm />}/>
      </Routes>
     </Router>

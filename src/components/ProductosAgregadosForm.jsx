@@ -1,21 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import FormularioProductos from './FormularioProductos';
+import { getUsers } from '../services/Llamados';
 
 
 function ProductosAgregadosForm() {
     const [productos, setProductos] = useState([]);
 
-    const agregarProducto = (nuevoProducto) => {
-        setProductos((prevProductos) => [...prevProductos, nuevoProducto]);
-    };
+    useEffect(()=>{
+        const mostrarProductos = async()=>{
+            const peticion = await getUsers("products")
+            setProductos(peticion)
+        }
+        mostrarProductos()
+    },[])
 
     return (
         <div>
-            <h1>Productos</h1>
-            <FormularioProductos agregarProducto={agregarProducto} />
+            <h1>Productos Agregados Recientemente</h1>
             <ul>
                 {productos.map((producto, index) => (
-                    <li key={index}>{producto.nombreProducto} - {producto.precio}</li>
+                    <li key={index}>{producto.nombreProducto} - {producto.precio} - {producto.descripcion} - {producto.imagenBase64}</li>
                 ))}
             </ul>
         </div>

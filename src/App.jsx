@@ -1,17 +1,18 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './pages/Login'
-import ProductosAgregadosForm from './components/ProductosAgregadosForm';
+import { useState } from 'react';
+
 
 
 
 function App() {
  
-  // luego voy a cambiar a registro por login.
   return (
     <>
       <div>
-        <ProductosAgregadosForm/> 
+    
+      <ProductosAgregadosForm/>   
       </div>
     </>
   )

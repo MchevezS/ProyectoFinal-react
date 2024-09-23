@@ -21,18 +21,17 @@ export{postUsers}
 
 
 // Metodo post: Guarda los datos.
-async function postProducts(obj, endpoint) {
+async function postProducts(formData, obj, endpoint) {
     try {
         const response = await fetch(`http://localhost:3001/${endpoint}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(obj)
+            body: JSON.stringify(formData, obj)
         });
         const data = await response.json()
         // console.log(data);
-        return data
     } catch (error) {
         console.error('Error posting user:', error);
         throw error;
