@@ -55,7 +55,7 @@ try {
   navigate('/Login');
 }
 } catch (error) {
-  console.error('Error al procesar la solicitud:', error);
+   console.error('Error al procesar la solicitud:', error);
 }
 
 }

@@ -43,19 +43,14 @@ export{postProducts}
 //Metodo Get: Obtiene informacio
 async function getUsers(endpoint) {
     try {
-        const response = await fetch(`http://localhost:3001/${endpoint}`, {
-            method: 'GET',
-            headers: {
-                'content-Type':'application/json'
-            },
-        });
+        const response = await fetch(`http://localhost:3001/${endpoint}`)
         if (!response.ok) {
             throw new Error('Error fetching users');
         }
         const data = await response.json()
         return data;
     } catch (error) {
-        console.error('Error fetching users:', error);
+        // console.error('Error fetching users:', error);
         throw error;
     }
 }
