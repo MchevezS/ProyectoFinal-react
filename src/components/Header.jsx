@@ -15,54 +15,42 @@ function BasicExample() {
 <div className='navbar'>
     <Navbar expand="lg" className="bg-body-tertiary">
     <img className='logo' src='src/img/IMG_20231218_211651_662 - Dhara Macrame.jpg'></img>
+    <Link to={"carritodecompras"}> <i class="bi bi-cart4"></i></Link>
       <Container>
       <NavDropdown title="Inicio" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Bolsa de valor</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Productos Destacados </NavDropdown.Item>
+              <NavDropdown.Item href="/ProductosDestacados">Productos Destacados </NavDropdown.Item>
             </NavDropdown>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto1">
             <NavDropdown title="Sobre Nosotros" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Informacion sobre la filosofia de Dhara y la nudoterapia</NavDropdown.Item>
+              <NavDropdown.Item href="/SobreNosotros">Informacion sobre la filosofia de Dhara y la nudoterapia</NavDropdown.Item>
             </NavDropdown>
           </Nav>
+          <Nav className="me-auto3">
+            <NavDropdown title="Contactanos" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/Contactanos">ver Informacion</NavDropdown.Item>
+            </NavDropdown>  
+          </Nav>
             <Nav className="me-auto2">
-            <NavDropdown title="Productos/Servicios" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">aca voy agregar todos los productos que haya </NavDropdown.Item>
+            <NavDropdown title="Productos" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/Aretes"> Aretes</NavDropdown.Item>
+              <NavDropdown.Item href="/Tapiz"> Tapiz tamaño estándar y tamaño grande </NavDropdown.Item>
+              <NavDropdown.Item href="/Carteras"> Cartera de mano </NavDropdown.Item>
+              <NavDropdown.Item href="Cuadros/"> Cuadro personalizado </NavDropdown.Item>
+              <NavDropdown.Item href="#action/VerMas"> Ver mas </NavDropdown.Item>
             </NavDropdown>  
           </Nav>
           <Nav className="me-auto3">
             <NavDropdown title="Metodo de Pago" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Sinpe Movil</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Sinpe Movil </NavDropdown.Item>
             </NavDropdown>  
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
     </div>
-  <div className='contenedorRedes'>
-    <div className='redesSociales'>
-      <div className='face'>
-      <Link to={"Facebook"}> <i className="fa-brands fa-facebook redes"></i> </Link>
-      </div>
-      <div className='whatsapp'>
-        <Link to={"Whatsapp"}> <i className="fa-brands fa-whatsapp redes"></i> </Link>
-        </div>
-        <div className='insta'>
-          <Link to={"Insta"}> <i className="fa-brands fa-instagram redes"></i> </Link> 
-          </div>
-          <div className='ubicacion'>
-           <Link to={"Ubicacion"}> <i className="fa-solid fa-location-dot redes"></i> </Link>
-           </div>
-    </div>
-    <div className='correoTelefono'>
-       <Link to={"Correo"}> <i className="fa-solid fa-envelope"> dhara.macrame@gmail.com</i> </Link>
-         <div className='telefono'>
-         <Link to={"Telefono"}> <i className="fa-solid fa-phone"> +506 83151653</i> </Link>
-         </div>     
-     </div>  
-</div>
     </>
   );
 }
