@@ -4,6 +4,50 @@
  @media (min-width: 1024px) {
 
  }
+ .bienvenido {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin: 20px 0;
+}
+
+.redesSociales1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contenedorRedes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.face, .whatsapp, .insta, .ubicacion, .correo, .telefono {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes {
+    font-size: 2em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.redes:hover {
+    color: #007bff; /* Cambia a un color azul al pasar el mouse */
+}
+
+.correo, .telefono {
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    margin-top: 5px;
+}
 
 
 

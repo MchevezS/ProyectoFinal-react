@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 function Contactanos() {
   return (
     <div>
-    <h1> Bienvenidos a Dhara Artesanal </h1>
-    <h2>Sigue nuestras Redes Sociales</h2>
+    <h1 className='bienvenido'> Bienvenidos a Dhara Artesanal </h1>
+    <h2 className='redesSociales1'>Sigue nuestras Redes Sociales</h2>
     <div className='contenedorRedes'>
 
       <div className='face'>
