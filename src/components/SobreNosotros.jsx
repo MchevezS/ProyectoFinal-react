@@ -1,10 +1,10 @@
 import React from 'react'
-
+import '../style/SobreNosotros.css';
 function SobreNosotros() {
   return (
     <div>
-        <h1>Que es Dhara Artesanal?</h1>
-        <p>Piezas hechas con intención y conexión.
+        <h1 className='dhara'>Que es Dhara Artesanal?</h1>
+        <p className='texto1'>Piezas hechas con intención y conexión.
 
 Fluir constantemente, es uno de los significados de Dhara. Desde el 2020, esta es una forma de vida que muchos tuvieron que adoptar. 
 

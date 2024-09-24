@@ -20,7 +20,7 @@ function BasicExample() {
     </div>
       <Container className='contenedorurl'>
       <NavDropdown title="Inicio" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/ProductosDestacados">Productos Destacados </NavDropdown.Item>
+              <NavDropdown.Item href="/Destacados">Productos Destacados </NavDropdown.Item>
               <NavDropdown.Item href="/Login">Cerrar sesion</NavDropdown.Item>
             </NavDropdown>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

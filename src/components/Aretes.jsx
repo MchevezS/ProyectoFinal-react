@@ -5,7 +5,7 @@ function Aretes() {
   return (
     <div>
        <h1>Aretes Gota</h1>
-    <div className='container'>
+    <div className='container111'>
     <div>
         <img className='aretes1' src='src/img/aretes 2.png'/>
         <p>Aretes</p>
