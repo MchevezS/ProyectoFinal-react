@@ -8,11 +8,11 @@ function Principal() {
   return (
     <div>
     <Header/>
+    <BarradeBusqueda/>
     <div style={{display:'flex', justifyContent:'center'}}> 
     <CarouselsPrincipal/>
     </div>
     <Destacados/>
-    <BarradeBusqueda/>
       
     </div>
   )

@@ -21,14 +21,14 @@ export{postUsers}
 
 
 // Metodo post: Guarda los datos.
-async function postProducts(formData, obj, endpoint) {
+async function postProducts(obj, endpoint) {
     try {
         const response = await fetch(`http://localhost:3001/${endpoint}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(formData, obj)
+            body: JSON.stringify(obj)
         });
         const data = await response.json()
         // console.log(data);
@@ -57,23 +57,27 @@ async function getUsers(endpoint) {
 export { getUsers};
 
 // Metodo Put: Actualiza datos
-async function updateUsers(endpoint) {
+async function updateUsers(producto, endpoint, id) {
     try {
-        const response = await fetch(`http://localhost:3001/${endpoint}`+id, {
+        const response = await fetch(`http://localhost:3001/${endpoint}/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(userData)
+            body: JSON.stringify(producto) 
         });
 
+        if (!response.ok) {
+            throw new Error('Error al actualizar el producto');
+        }
 
         return await response.json();
     } catch (error) {
-        console.error('Error update user:', error);
+        console.error('Error al actualizar el producto:', error);
         throw error;
     }
 }
+
 
 export{updateUsers}
 
