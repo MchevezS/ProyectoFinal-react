@@ -7,7 +7,7 @@ function Destacados() {
 
   const agregarAlCarrito = (producto) => {
       setCarrito([...carrito, producto]);
-      // Aquí podrías agregar la lógica para guardar en localStorage si lo necesitas
+    
       localStorage.setItem('carrito', JSON.stringify([...carrito, producto]));
   };
 

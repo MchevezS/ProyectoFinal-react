@@ -29,7 +29,7 @@ function FormLogin() {
 }
 
 try {
-  let usuarios = await getUsers();
+  let usuarios = await getUsers("users");
 
    let usuario = usuarios.find(user => user.correo === correo && user.clave === password);
 

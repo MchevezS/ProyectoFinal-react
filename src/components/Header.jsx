@@ -13,7 +13,6 @@ function BasicExample() {
 <br/>
 
 <div className='navbar'>
-    
     <Navbar expand="lg" className="bg-body-tertiary">
     <div>
     <img className='logo' src='src/img/IMG_20231218_211651_662 - Dhara Macrame.jpg'></img>
@@ -21,8 +20,8 @@ function BasicExample() {
     </div>
       <Container className='contenedorurl'>
       <NavDropdown title="Inicio" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Bolsa de valor</NavDropdown.Item>
               <NavDropdown.Item href="/ProductosDestacados">Productos Destacados </NavDropdown.Item>
+              <NavDropdown.Item href="/Login">Cerrar sesion</NavDropdown.Item>
             </NavDropdown>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -42,7 +41,7 @@ function BasicExample() {
               <NavDropdown.Item href="/Tapiz"> Tapiz tamaño estándar y tamaño grande </NavDropdown.Item>
               <NavDropdown.Item href="/Carteras"> Cartera de mano </NavDropdown.Item>
               <NavDropdown.Item href="Cuadros/"> Cuadro personalizado </NavDropdown.Item>
-              <NavDropdown.Item href="#action/VerMas"> Ver mas </NavDropdown.Item>
+              <NavDropdown.Item href="/ProductosAgregadosForm"> Productos agregados recientemente </NavDropdown.Item>
             </NavDropdown>  
           </Nav>
           <Nav className="me-auto3">
