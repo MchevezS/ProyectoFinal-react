@@ -8,6 +8,8 @@ import FormularioProductos from '../components/FormularioProductos';
 import ProductosAgregadosForm from '../components/ProductosAgregadosForm';
 import SobreNosotros from '../components/SobreNosotros';
 import Contactanos from '../components/Contactanos';
+import Aretes from '../components/Aretes';
+import CarterasBolsos from '../components/CarterasBolsos';
 
 
 const Routing = () => {
@@ -22,6 +24,8 @@ const Routing = () => {
        <Route path='/productosAgregadosForm' element={<ProductosAgregadosForm />}/>
        <Route path='/SobreNosotros' element={<SobreNosotros/>}/>
        <Route path='/Contactanos' element={<Contactanos/>}/>
+       <Route path='/Aretes' element={<Aretes/>}/>
+       <Route path='/CarterasBolsos' element={<CarterasBolsos/>}/>
      </Routes>
     </Router>
    );

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FormularioProductos from './FormularioProductos';
 import { getUsers } from '../services/Llamados';
+import { Link } from 'react-router-dom';
 
 
 function ProductosAgregadosForm() {
@@ -22,6 +23,7 @@ function ProductosAgregadosForm() {
                     <li key={index}>{producto.nombreProducto} - {producto.precio} - {producto.descripcion} - {producto.imagenBase64}</li>
                 ))}
             </ul>
+            <Link to={"/Principal"}>Atrás</Link>
         </div>
     );
 }

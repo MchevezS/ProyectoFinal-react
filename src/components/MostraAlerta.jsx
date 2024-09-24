@@ -1,7 +1,7 @@
 
 import Swal from 'sweetalert2'
 import '/src/style/MostrarAlerta.css'
-import { Await } from 'react-router-dom'
+
 const Toast = Swal.mixin({
     toast: true,
     position: 'center',
