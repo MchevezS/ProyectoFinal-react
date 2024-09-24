@@ -85,6 +85,7 @@ function ProductosAgregadosForm() {
                 </ul>
             )}
             <Link to={"/Principal"} className='linkAtras'>Atrás</Link>
+            <Link to={"/FormularioProductos"} className='linkAtras'>Agregar nuevos productos</Link>
         </div>
     );
 }

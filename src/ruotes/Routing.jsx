@@ -12,6 +12,7 @@ import Aretes from '../components/Aretes';
 import CarterasBolsos from '../components/CarterasBolsos';
 import Destacados from '../components/Destacados';
 import EditarProductos from '../components/EditarProductos';
+import ProductosTapiz from '../pages/ProductosTapiz';
 
 
 const Routing = () => {
@@ -28,6 +29,7 @@ const Routing = () => {
        <Route path='/Contactanos' element={<Contactanos/>}/>
        <Route path='/Aretes' element={<Aretes/>}/>
        <Route path='/CarterasBolsos' element={<CarterasBolsos/>}/>
+       <Route path='/ProductosTapiz' element={<ProductosTapiz/>}/>
        <Route path='/editar' element={<EditarProductos />}/>
        <Route path='/editar' element={<EditarProductos/>}/>  
      </Routes>

@@ -38,9 +38,8 @@ function BasicExample() {
             <Nav className="me-auto2">
             <NavDropdown title="Productos" id="basic-nav-dropdown">
               <NavDropdown.Item href="/Aretes"> Aretes</NavDropdown.Item>
-              <NavDropdown.Item href="/Tapiz"> Tapiz tamaño estándar y tamaño grande </NavDropdown.Item>
-              <NavDropdown.Item href="/Carteras"> Cartera de mano y bolsos </NavDropdown.Item>
-              <NavDropdown.Item href="Cuadros/"> Cuadro personalizado </NavDropdown.Item>
+              <NavDropdown.Item href="/ProductosTapiz"> Tapiz tamaño estándar y tamaño grande </NavDropdown.Item>
+              <NavDropdown.Item href="/CarterasBolsos"> Cartera de mano y bolsos </NavDropdown.Item>
               <NavDropdown.Item href="/ProductosAgregadosForm"> Productos agregados recientemente </NavDropdown.Item>
             </NavDropdown>  
           </Nav>

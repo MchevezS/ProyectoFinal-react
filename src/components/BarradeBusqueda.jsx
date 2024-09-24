@@ -38,11 +38,11 @@ function BarraDeBusqueda() {
 
       <select onChange={e => setCategoriaSeleccionada(e.target.value)} value={categoriaSeleccionada}>
         <option value="">Todas las categorías</option>
-        <option value="zapatos">Zapatos</option>
-        <option value="camisas">Camisas</option>
-        <option value="pantalones">Pantalones</option>
+        <option value="zapatos">Tapiz</option>
+        <option value="camisas">Cartera de mano</option>
+        <option value="pantalones">Bolsos</option>
         <option value="accesorios">Accesorios</option>
-        <option value="chaquetas">Chaquetas</option>
+        <option value="chaquetas">Cuadros</option>
       </select>
 
       <ul>
