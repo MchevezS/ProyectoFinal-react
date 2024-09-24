@@ -1,57 +1,95 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import { getUsers, postProducts } from '../services/Llamados';
 import { mostrarAlerta } from './MostraAlerta';
-import { updateUsers } from '../services/Llamados';
 
-function EditarProductos({id, }) {
- const [nuevoNombre, setNuevoNombre] = useState('');
- const [nuevaImagen, setNuevaImagen] = useState(null); 
- const [nuevaDescripcion, setNuevaDescripcion] = useState(''); 
- const [nuevoPrecio, setNuevoPrecio] = useState(''); 
+function EditarProductos() {
+    const [producto, setProducto] = useState(null);
+    const [imagenProducto, setImagenProducto] = useState(null);
+    const [imagenBase64, setImagenBase64] = useState('');
+    const [descripcion, setDescripcion] = useState('');
+    const [precio, setPrecio] = useState('');
+    const navigate = useNavigate();
+    const { id } = useParams(); // estoy pasando el ID del producto en la URL
 
-const validarEditarForm = async ()=>{
- if (nuevoNombre.trim()==="" || !nuevaImagen || nuevaDescripcion.trim()==="" || nuevoPrecio.trim()==="") {
-    mostrarAlerta('error', "Llenar espacios vacios")
-   return;
-   }
+    useEffect(() => {
+        const obtenerProducto = async () => {
+            try {
+                const productos = await getUsers("products");
+                const productoEncontrado = productos.find(prod => prod.id === parseInt(id)); 
+                setProducto(productoEncontrado);
+                if (productoEncontrado) {
+                    setImagenBase64(productoEncontrado.imagenBase64);
+                    setDescripcion(productoEncontrado.descripcion);
+                    setPrecio(productoEncontrado.precio);
+                }
+            } catch (error) {
+                console.error("Error al obtener el producto:", error);
+                mostrarAlerta("error", "Error al obtener el producto.");
+            }
+        };
+        obtenerProducto();
+    }, [id]);
 
- const datosProductos = {
-    nuevoNombre:nuevoNombre,
-    nuevaImagen:nuevaImagen,
-    nuevaDescripcion:nuevaDescripcion,
-    nuevoPrecio:nuevoPrecio
- }
+    const actualizarProducto = async (e) => {
+        e.preventDefault();
+        const productoActualizado = {
+            ...producto,
+            imagenProducto: imagenBase64,
+            descripcion,
+            precio
+        };
 
- try {
-   await updateUsers("products", id, datosProductos);
-   mostrarAlerta('success', "Producto actualizado correctamente");
- } catch (error) {
-   console.error("Error actualizando el producto", error);
-   mostrarAlerta('error', "Error al actualizar el producto")
- }
- 
-};
+        await postProducts(productoActualizado, "product");
+        mostrarAlerta('success', "Producto actualizado exitosamente");
+        navigate('/productosAgregadosForm'); 
+    };
 
-  return (
-    <div>
-    <h1>Edita tus Productos</h1>
-     <form>
-        <label>Nuevo nombre del Producto</label>
-        <input type='name' className='nuevoNombre' value={nuevoNombre} placeholder='Ingresa el nuevo nombre de tu Producto' onChange={(e)=> setNuevoNombre(e.target.value)}></input>
+    if (!producto) return 
+    mostrarAlerta("cargando....")
 
-        <label>Nueva Imagen</label>
-        <input type='file' className='nuevaImagen' placeholder='Ingresa tu nueva immagen' onChange={(e)=> setNuevaImagen(e.target.files[0])}></input>
+    return (
+        <div>
+            <h1>Editar Producto</h1>
+            <form onSubmit={actualizarProducto}>
+                <label>Nombre del Producto</label>
+                <input
+                    type='text'
+                    value={producto.nombreProducto}
+                    onChange={(e) => setProducto({ ...producto, nombreProducto: e.target.value })}
+                />
 
-        <label>Nueva descripcion</label>
-        <input type='text' className='nuevaDescripcion' value={nuevaDescripcion} placeholder='Ingresa una descripcion' onChange={(e)=> setNuevaDescripcion(e.target.value)}></input>
+                <label>Imagen del producto</label>
+                <input
+                    type='file'
+                    onChange={(e) => {
+                        setImagenProducto(e.target.files[0]);
+                        const reader = new FileReader();
+                        reader.onloadend = () => {
+                            setImagenBase64(reader.result);
+                        };
+                        reader.readAsDataURL(e.target.files[0]);
+                    }}
+                />
 
-        <label>Nuevo precio</label>
-        <input type='precio' className='nuevoPrecio' value={nuevoPrecio} placeholder='Ingresa el nuevo precio' onChange={(e)=> setNuevoPrecio(e.target.value)}></input>
+                <label>Descripción</label>
+                <input
+                    type='text'
+                    value={descripcion}
+                    onChange={(e) => setDescripcion(e.target.value)}
+                />
 
-        <button type='button' className='btnEditarFormulario' onClick={validarEditarForm}></button>
+                <label>Precio</label>
+                <input
+                    type='number'
+                    value={precio}
+                    onChange={(e) => setPrecio(e.target.value)}
+                />
 
-     </form>
-    </div>
-  )
+                <button type='submit'>Actualizar Producto</button>
+            </form>
+        </div>
+    );
 }
 
-export default EditarProductos
+export default EditarProductos;

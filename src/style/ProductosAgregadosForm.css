@@ -1,0 +1,55 @@
+.contenedorListaP {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recientemente {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.listaProducts {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0;
+}
+
+.listaProducts li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Centrar verticalmente */
+    transition: background-color 0.3s ease;
+}
+
+.listaProducts li:hover {
+    background-color: #f1f1f1; /* Cambia el color al pasar el mouse */
+}
+
+.listaProducts img {
+    width: 50px; /* Tamaño de la imagen */
+    height: auto; /* Mantener la proporción */
+    margin-right: 10px; /* Espaciado entre imagen y texto */
+}
+
+.linkAtras {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+}
+
+.linkAtras:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}

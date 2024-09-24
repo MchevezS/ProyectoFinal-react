@@ -10,13 +10,14 @@ import SobreNosotros from '../components/SobreNosotros';
 import Contactanos from '../components/Contactanos';
 import Aretes from '../components/Aretes';
 import CarterasBolsos from '../components/CarterasBolsos';
+import Destacados from '../components/Destacados';
 
 
 const Routing = () => {
   return (
     <Router>
      <Routes>
-       <Route path='/' element={<Login/>}/>  
+       {/* <Route path='/' element={<Login/>}/>   */}
        <Route path='/Registro' element={<Registro/>}/>
        <Route path='/Login' element={<Login/>}/>
        <Route path='/Principal' element={<Principal/>}/>  
@@ -26,6 +27,8 @@ const Routing = () => {
        <Route path='/Contactanos' element={<Contactanos/>}/>
        <Route path='/Aretes' element={<Aretes/>}/>
        <Route path='/CarterasBolsos' element={<CarterasBolsos/>}/>
+       <Route path='/editar/:id' element={<ProductosAgregadosForm />}/>
+       <Route path='/editar/:id' element={<Destacados/>}/>  
      </Routes>
     </Router>
    );

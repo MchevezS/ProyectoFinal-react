@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/Header';
 import CarouselsPrincipal from '../components/CarouselsPrincipal';
 import Destacados from '../components/Destacados';
+import BarradeBusqueda from '../components/BarradeBusqueda';
 function Principal() {
   return (
     <div>
@@ -11,6 +12,7 @@ function Principal() {
     <CarouselsPrincipal/>
     </div>
     <Destacados/>
+    <BarradeBusqueda/>
       
     </div>
   )
